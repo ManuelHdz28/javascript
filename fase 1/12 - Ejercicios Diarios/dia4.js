@@ -10,11 +10,12 @@
 */
 
 let nota = 6;
+let numero = Infinity;
 
 if (nota >= 7){
     console.log("Aprobado");
 } else if (nota >=4  && nota <=6){
-    console.log("En recuperacion");
+    console.log("En recuperacion", numero);
 } else if (nota >=0 && nota <4){
     console.log("Reprobado");
 }

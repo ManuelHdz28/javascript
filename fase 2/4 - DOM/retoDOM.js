@@ -3,16 +3,27 @@ const titulo = document.getElementById("titulo");
 const boton = document.getElementById("btn");
 
 
- let estado = true;
-titulo.textContent = `Esperando ...`;
+const cambiarEstado = {
+    iniciado: "has Iniciado!",
+    esperando: "Esperando ...",
+}
+
+let estado = true;
+titulo.textContent = cambiarEstado.esperando;
 
 boton.addEventListener("click", () => {
    
   if (estado) {
-    titulo.textContent = `has Iniciado!`;
-    estado = false;
+    titulo.textContent = cambiarEstado.iniciado;
   } else {
-    titulo.textContent = `Esperando ...`;
-    estado = true;
+    titulo.textContent = cambiarEstado.esperando;
   }
+  estado = !estado;
 });
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 
 const titulo = document.getElementById("titulo");
 const boton = document.getElementById("btn");
-
+const reset = document.getElementById("reset");
 
 const cambiarEstado = {
     iniciado: "has Iniciado!",
@@ -19,6 +19,11 @@ boton.addEventListener("click", () => {
     titulo.textContent = cambiarEstado.esperando;
   }
   estado = !estado;
+});
+
+reset.addEventListener("click", () => {
+  titulo.textContent = cambiarEstado.esperando;
+  estado = true;
 });
 
 

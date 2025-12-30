@@ -5,15 +5,15 @@ const reset = document.getElementById('reset');
 
 let contadorDisplay = 0;
 
-const estadoContador = {
+const estadoContador = { //* esto es un objeto para tener todo mas ordenado
     tema: "Contador: ",
-    puntaje: contadorDisplay, //* la uso para cabiarle el color rojo al puntaje si es 0
+    puntaje: contadorDisplay, 
 }
 
-const colorPuntaje =  () => { //! trate de ponerselo solo al contadorDisplay pero no se como
+const colorPuntaje =  () => { //* esto es una funcion para cambiar el color del puntaje
     if (contadorDisplay === 0) {
         contador.style.color = "red";
-        
+
     } else {
         contador.style.color = "black";
     }
@@ -21,7 +21,7 @@ const colorPuntaje =  () => { //! trate de ponerselo solo al contadorDisplay per
 
 colorPuntaje();
 
-sumar.addEventListener("click", () => {
+sumar.addEventListener("click", () => { //* esto es un evento para sumar
     contadorDisplay += 1;
     contador.textContent = estadoContador.tema + contadorDisplay;
     colorPuntaje();

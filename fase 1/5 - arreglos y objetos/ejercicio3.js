@@ -4,6 +4,7 @@ let usuarios = [
   { nombre: "Carlos", edad: 30, activo: true },
   { nombre: "Sofia", edad: 15, activo: true },
   { nombre: "Mario", edad: 19, activo: false },
+  { nombre: "Laura", edad: 25, activo: true },
 ];
 
 

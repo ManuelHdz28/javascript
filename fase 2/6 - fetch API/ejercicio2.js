@@ -15,7 +15,7 @@ const cargarUserActivos = (usuarios) => {
 
 btnCargar.addEventListener("click", () => {
     
-     fetch('https://jsonplaceholder.typicode.com/users') //* usar fetch para obtener los usuarios
+     fetch('https://jsonplaceholder.typicode.com/users') //* usar fetch para obtener los usuarios /users es un endpoint que da mas datos
     .then(response => response.json())
     .then(usuarios => {
         const total = cargarUserActivos(usuarios);
